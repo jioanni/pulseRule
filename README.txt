@@ -1,0 +1,1 @@
+This is a QASymphony qTest Pulse rule for API Fortress. 
