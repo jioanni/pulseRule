@@ -43,7 +43,6 @@ results.forEach((testCase) => {
     reportingLog.test_step_logs = testStepLogs;
     reportingLog.featureName = featureName;
     testLogs.push(reportingLog)
-    
 })
 
 const formattedResults = {
