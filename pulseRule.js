@@ -1,6 +1,7 @@
 const results = body;
 const projectId = results[0].project.id;
-const cycleId = Math.floor(Math.random() * 1000000);
+const cycleId = payload["test-cycle"];
+
 
 const collectionName = results[0].project.name;
 const testLogs = [];
@@ -16,7 +17,7 @@ results.forEach((testCase) => {
             'API Fortress'
         ],
         name: testCase.test.name,
-        automation_content: "I don't know what goes here"    
+        automation_content: Math.floor(Math.random() * 1000000); 
     };
 
     const testStepLogs = [];
@@ -46,7 +47,7 @@ results.forEach((testCase) => {
 })
 
 const formattedResults = {
-    "projectId" : projectId, //handled
+    "projectId" : projectId, 
     "test-cycle" : cycleId,
     "logs" : testLogs
 };
