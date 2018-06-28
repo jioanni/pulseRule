@@ -17,7 +17,7 @@ results.forEach((testCase) => {
             'API Fortress'
         ],
         name: testCase.test.name,
-        automation_content: Math.floor(Math.random() * 1000000); 
+        automation_content: Math.floor(Math.random() * 1000000)
     };
 
     const testStepLogs = [];
